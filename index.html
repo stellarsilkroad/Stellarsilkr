@@ -41,99 +41,104 @@
   </style>
 </head>
 <body>
+  <!-- 导航栏 -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3 sticky-top">
+    <a class="navbar-brand" href="#">Stellar Silk Road</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="collapse" href="#aboutCollapse" role="button">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="collapse" href="#productsCollapse" role="button">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="collapse" href="#contactCollapse" role="button">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-<!-- 导航栏 -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
-  <a class="navbar-brand" href="#">Stellar Silk Road</a>
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navMenu">
-    <ul class="navbar-nav ms-auto">
-      <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-      <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
-      <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-    </ul>
-  </div>
-</nav>
+  <!-- 头图 -->
+  <header class="hero">
+    <h1>Stellar Silk Road</h1>
+    <p>Your Trusted Global Trade Partner from China</p>
+    <a href="#contactCollapse" data-bs-toggle="collapse" class="btn btn-primary btn-lg mt-3">Get in Touch</a>
+  </header>
 
-<!-- 头图 Hero -->
-<header class="hero">
-  <h1>Stellar Silk Road</h1>
-  <p>Your Trusted Global Trade Partner from China</p>
-  <a href="#contact" class="btn btn-primary btn-lg mt-3">Get in Touch</a>
-</header>
+  <!-- 关于我们（点击展开） -->
+  <section id="aboutCollapse" class="collapse container py-4">
+    <h2 class="text-center mb-3">About Us</h2>
+    <div class="w-75 mx-auto">
+      <p>
+        <strong>Stellar Silk Road International Trade Co., Ltd.</strong> is a comprehensive enterprise located in Tangshan, China, focusing on global trade services.
+        We are jointly backed by several experienced and reputable manufacturers in the region, and specialize in both high-end and bulk products.
+      </p>
+      <p>
+        Our main business areas include solar-powered appliances, steel products, footwear and clothing, pet supplies, packaging materials, and cycling accessories.
+        We are committed to providing quality products at competitive prices, with professional export services and reliable logistics support.
+      </p>
+      <p>
+        With the spirit of the Silk Road in mind, we strive to build long-term, win-win partnerships with customers around the world.
+      </p>
+    </div>
+  </section>
 
-<!-- 关于我们 -->
-<section id="about" class="container py-5">
-  <h2 class="text-center mb-4">About Us</h2>
-  <div class="w-75 mx-auto">
-    <p>
-      <strong>Stellar Silk Road International Trade Co., Ltd.</strong> is a comprehensive enterprise located in Tangshan, China, focusing on global trade services.  
-      We are jointly backed by several experienced and reputable manufacturers in the region, and specialize in both high-end and bulk products.
-    </p>
-    <p>
-      Our main business areas include solar-powered appliances, steel products, footwear and clothing, pet supplies, packaging materials, and cycling accessories.  
-      We are committed to providing quality products at competitive prices, with professional export services and reliable logistics support.
-    </p>
-    <p>
-      With the spirit of the Silk Road in mind, we strive to build long-term, win-win partnerships with customers around the world.
-    </p>
-  </div>
-</section>
-
-<!-- 产品展示 -->
-<section id="products" class="bg-white py-5">
-  <div class="container">
-    <h2 class="text-center mb-4">Our Products</h2>
-    <div class="row g-4">
-      <div class="col-md-4">
-        <div class="card p-3">
-          <h5>🌞 Solar Lighting</h5>
-          <p>High-efficiency solar lights for gardens and roads. Durable, eco-friendly, and easy to install.</p>
+  <!-- 产品目录（点击展开） -->
+  <section id="productsCollapse" class="collapse bg-light py-4">
+    <div class="container">
+      <h2 class="text-center mb-3">Our Products</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card p-3">
+            <h5>🌞 Solar Lighting</h5>
+            <p>High-efficiency solar lights for gardens and roads. Durable, eco-friendly, and easy to install.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-3">
+            <h5>🧵 Silk Quilts</h5>
+            <p>Natural mulberry silk quilts offering comfort, breathability, and luxury sleep experiences.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-3">
+            <h5>🐾 Pet Supplies</h5>
+            <p>From beds to toys, we supply a variety of high-quality pet accessories for global markets.</p>
+          </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="card p-3">
-          <h5>🧵 Silk Quilts</h5>
-          <p>Natural mulberry silk quilts offering comfort, breathability, and luxury sleep experiences.</p>
-        </div>
+    </div>
+  </section>
+
+  <!-- 联系我们（点击展开） -->
+  <section id="contactCollapse" class="collapse container py-4">
+    <h2 class="text-center mb-3">Contact Us</h2>
+    <form class="w-75 mx-auto" action="https://formspree.io/f/your-form-id" method="POST">
+      <div class="mb-3">
+        <label class="form-label">Your Name</label>
+        <input type="text" class="form-control" name="name" required />
       </div>
-      <div class="col-md-4">
-        <div class="card p-3">
-          <h5>🐾 Pet Supplies</h5>
-          <p>From beds to toys, we supply a variety of high-quality pet accessories for global markets.</p>
-        </div>
+      <div class="mb-3">
+        <label class="form-label">Your Email</label>
+        <input type="email" class="form-control" name="email" required />
       </div>
-    </div>
-  </div>
-</section>
+      <div class="mb-3">
+        <label class="form-label">Message</label>
+        <textarea class="form-control" name="message" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary w-100">Send Message</button>
+    </form>
+  </section>
 
-<!-- 联系表单 -->
-<section id="contact" class="container py-5">
-  <h2 class="text-center mb-4">Contact Us</h2>
-  <form class="w-75 mx-auto" action="https://formspree.io/f/your-form-id" method="POST">
-    <div class="mb-3">
-      <label for="name" class="form-label">Your Name</label>
-      <input type="text" class="form-control" name="name" required />
-    </div>
-    <div class="mb-3">
-      <label for="email" class="form-label">Your Email</label>
-      <input type="email" class="form-control" name="email" required />
-    </div>
-    <div class="mb-3">
-      <label for="message" class="form-label">Message</label>
-      <textarea class="form-control" name="message" rows="4" required></textarea>
-    </div>
-    <button type="submit" class="btn btn-primary w-100">Send Message</button>
-  </form>
-</section>
+  <!-- 页脚 -->
+  <footer class="text-center py-4 bg-dark text-white mt-5">
+    &copy; 2025 Stellar Silk Road International Trade Co., Ltd. All rights reserved.
+  </footer>
 
-<!-- 页脚 -->
-<footer class="text-center py-4 mt-5">
-  <p>&copy; 2025 Stellar Silk Road International Trade Co., Ltd. All rights reserved.</p>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
